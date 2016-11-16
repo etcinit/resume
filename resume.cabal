@@ -1,0 +1,34 @@
+-- This file has been generated from package.yaml by hpack version 0.9.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           resume
+version:        0.0.0.1
+synopsis:       A multi-format resume
+category:       Text
+homepage:       https://github.com/etcinit/resume#readme
+bug-reports:    https://github.com/etcinit/resume/issues
+maintainer:     Eduardo Trujillo <ed@chromabits.com>
+license:        AllRightsReserved
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/etcinit/resume
+
+executable resume
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >= 4.7 && < 5
+    , pandoc
+    , bytestring
+    , text
+    , async
+    , hinotify
+    , optparse-generic
+  default-language: Haskell2010

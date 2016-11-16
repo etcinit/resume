@@ -1,0 +1,23 @@
+name: resume
+version: 0.0.0.1
+synopsis: A multi-format resume
+maintainer: Eduardo Trujillo <ed@chromabits.com>
+license: AllRightsReserved
+github: etcinit/resume
+category: Text
+
+ghc-options: -threaded -rtsopts -with-rtsopts=-N
+
+dependencies:
+  - base >= 4.7 && < 5
+  - pandoc
+  - bytestring
+  - text
+  - async
+  - hinotify
+  - optparse-generic
+
+executables:
+  resume:
+    main: Main.hs
+    source-dirs: app
